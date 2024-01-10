@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#front" class="scroll-top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 15l7-7 7 7"
+          />
+        </svg>
+      </a>
+
+      <nav class="navbar">
+        <div class="logo">LOGO</div>
+
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <div class="menu">
+            <li><a href="#front">Home</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <section id="front">
+        <div class="info">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            style="color: white"
+          >
+            Hi
+          </h1>
+          <h1
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            style="color: white"
+          >
+            I Am
+          </h1>
+          <h1 data-aos="fade-out" data-aos-duration="2000">
+            Hasvitha
+            <h2 class="sub">A Kuchipudi Dancer</h2>
+          </h1>
+        </div>
+        <div class="frontImg">
+          <img
+            src="Images/first.svg"
+            alt=""
+            class="myImg"
+          />
+        </div>
+      </section>
+    </header>
+
+    <section id="achievements">
+      <h1 data-aos="fade-right" data-aos-duration="1200">
+        <span>A</span>chievements
+      </h1>
+      <ul class="lists">
+        <li>Secured Runner in National All India Dance</li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h1 data-aos="fade-right" data-aos-duration="1200">
+        <span>S</span>kills
+      </h1>
+      <div class="skills-set">
+        <img title="C" src="Images/skills/c.svg" alt="" width="100px" />
+        <img title="C++" src="Images/skills/cpp.png" alt="" width="100px" />
+        <img
+          title="Python"
+          src="Images/skills/python.png"
+          alt=""
+          width="100px"
+        />
+        <img title="Html" src="Images/skills/html5.png" alt="" width="100px" />
+        <img title="Css" src="Images/skills/css3.png" alt="" width="100px" />
+        <img title="Data Structures and Algorithms" src="Images/skills/dsa.png" alt="" width="100px" />
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <div class="col-right" data-aos="fade-left" data-aos-duration="1200">
+          <h1 class="about-title">About <span>ME</span></h1>
+          <h2>Kuchipudi Dancer</h2>
+          <ul>
+            <li>
+                I am Sai Hasvitha, studying Computer Science Engineering in St.
+            Theresa Institute Of Engineering and Technology, Vizianagaram,
+            Andhra Pradesh.
+            </li>
+            <li>
+                I am learning kurchipudi dance from childhood.
+            </li>
+            <li>
+                I
+                participated in many state and national dance competetions.
+            </li>
+            <li>
+                I want to pursue Ph.D in Kuchipudi dance.  
+            </li>
+          </ul>
+            
+          </p>
+        </div>
+        <div class="col-left">
+          <div class="about-img" data-aos="fade-right" data-aos-duration="1900">
+            <img src="images/img3.jpg" height="416px" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 data-aos="fade-right" data-aos-duration="1200">
+        <span>C</span>ontact
+      </h1>
+
+      <div class="contact">
+        <div>
+          <img src="Images/contact.svg" alt="" />
+        </div>
+        <form action="/" method="post">
+          <div class="contact-card">
+            <label for="name">Name</label>
+            <input type="text" />
+            <label for="email">Email</label>
+            <input type="email" name="email" ""/>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
